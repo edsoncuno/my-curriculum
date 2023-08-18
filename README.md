@@ -4,7 +4,7 @@ El proposito de ste proyecto es elaborar un editor de curriculum vitae
 
 ## Prueba
 Para probar el proyecto vas con dirigirse a:
-https://edsoncuno.github.io/my-portafolio/
+https://edsoncuno.github.io/my-curriculum/
 
 ## Desarrollo
 
