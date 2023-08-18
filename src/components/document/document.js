@@ -1,7 +1,15 @@
+import styles from "./document.module.css";
+
 export default function App() {
   const data = {
-    nombre: "edson diego cuno tipso",
-    domicilio: "AV RIO PERENE MZ E LT 16 URB SOL DE VITARTE SECTOR G ATE VITARTE",
+    nombres: "edson diego",
+    apellidos: "cuno tipso",
+    avenida: "AV RIO PERENE 771",
+    distrito: "ATE",
+    ciudad: "LIMA",
+    pais: "PERÚ",
+    domicilio:
+      "AV RIO PERENE MZ E LT 16 URB SOL DE VITARTE SECTOR G ATE VITARTE",
     correo: "edsoncuno3@gmail.com",
     telefono: "970555161",
     dni: "73205427",
@@ -22,25 +30,78 @@ export default function App() {
         institucion: "Idat",
         fecha: "Marzo 2023 - Junio 2023",
         extra: "",
-      }, {
+      },
+      {
         nombre: "Microsoft Power BI Básico",
         institucion: "Idat",
         fecha: "Junio 2023 - En curso",
         extra: "",
-      }
+      },
     ],
-    habilidades: ["Node.js (React, Express)", "HTML", "CSS",  "Python (FaztAPI)", "Gnu/Linux (Debian, Ubuntu, Archlinux)"],
-    resumen : "Estudiante de Ingeniería informática del noveno ciclo, con conocimiento en desarrollo web (frontend y backend) y análisis de datos."
-  }
-  
-  const style = {
-    width: "794px",
-    height: "1120px",
-    backgroundColor: "white",
-    boxShadow: "0px 15px 15px 15px rgba(0, 0, 0, 0.2)",
+    habilidades: [
+      "Node.js (React, Express)",
+      "HTML",
+      "CSS",
+      "Python (FaztAPI)",
+      "Gnu/Linux (Debian, Ubuntu, Archlinux)",
+    ],
+    resumen:
+      "Estudiante de Ingeniería Informática del noveno ciclo, con conocimiento en desarrollo web (frontend y backend) y análisis de datos.",
   };
 
-  return <div id="element-to-print" style={style}>
-    
-  </div>;
+  const style = {
+    width: "100%",
+    height: "100%",
+    backgroundColor: "white",
+  };
+
+  return (
+    <div id="element-to-print" className={styles.document}>
+      <div className={styles.left}>
+        <div className={styles.photo}></div>
+        <div className={styles.name}>
+          <div>{data.nombres.toUpperCase()}</div>
+          <div>{data.apellidos.toUpperCase()}</div>
+        </div>
+        <div className={styles.contacto}>
+          <div className={styles.title}>
+            <div className={styles.icon}></div>
+            <div>CONTACTO</div>
+            <div className={styles.trash}></div>
+          </div>
+          <div className={styles.direccion}>
+            <div className={styles.icon}></div>
+            <div>
+              {data.avenida}, {data.distrito}
+            </div>
+            <div className={styles.trash}></div>
+          </div>
+          <div className={styles.correo}>
+            <div className={styles.icon}></div>
+            <div>{data.correo}</div>
+            <div className={styles.trash}></div>
+          </div>
+          <div className={styles.telefono}>
+            <div className={styles.icon}></div>
+            <div>{data.telefono}</div>
+            <div className={styles.trash}></div>
+          </div>
+          <div className={styles.dni}>
+            <div className={styles.icon}></div>
+            <div>{data.dni}</div>
+            <div className={styles.trash}></div>
+          </div>
+        </div>
+        <div className={styles.resumen}>
+          <div className={styles.title}>
+            <div className={styles.icon}></div>
+            <div>RESUMEN</div>
+            <div className={styles.trash}></div>
+          </div>
+          <div className={styles.texto}>{data.resumen}</div>
+        </div>
+      </div>
+      <div className={styles.right}></div>
+    </div>
+  );
 }

@@ -1,7 +1,10 @@
-export default function App() {
+export default function App(props) {
+  function download() {
+    props.download()
+  }
   return (
     <div>
-      <button>Descargar</button>
+      <button onClick={download} disabled={!(props.downloading===false)}>Descargar</button>
     </div>
   );
 }
