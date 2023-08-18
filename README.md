@@ -1,14 +1,15 @@
 # My Curriculum
 
-El proposito de ste proyecto es elaborar un editor de curriculum vitae
+El propósito de este proyecto es elaborar un editor de curriculum vitae
 
-## Prueba
-Para probar el proyecto vas con dirigirse a:
+## Ver
+
+Para ver el curriculum, hay que dirigirse a la siguiente web:
 https://edsoncuno.github.io/my-curriculum/
 
 ## Desarrollo
 
-Es necesario instalar:
+Para el proceso de desarrollo, es necesario instalar:
 
 - Node.js https://nodejs.org/en/download
 
