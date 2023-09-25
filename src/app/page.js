@@ -13,15 +13,15 @@ import jsPDF from "jspdf";
 export default function Home() {
   const [downloading, setDownloading] = useState(false);
 
-  function dowloadPdf() {
+  function dowloadPdf(scale = 1.5) {
     let capture;
     if (typeof window !== "undefined") {
       capture = document.getElementById("element-to-print");
     }
     setDownloading(true);
-    html2canvas(capture).then((canvas) => {
+    html2canvas(capture, { scale: scale }).then((canvas) => {
       const img = canvas.toDataURL("img/png");
-      const document = new jsPDF("p", "mm", "a4");
+      const document = new jsPDF("p", "mm", "a4", true);
       const componentWidth = document.internal.pageSize.getWidth();
       const componentHeight = document.internal.pageSize.getHeight();
       document.addImage(img, "PNG", 0, 0, componentWidth, componentHeight);

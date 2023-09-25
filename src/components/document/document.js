@@ -1,5 +1,11 @@
 import styles from "./document.module.css";
 
+import Aptitudes from "./Aptitudes";
+import FormacionAcademica from "./FormacionAcademica";
+import PerfilProfesional from "./PerfilProfesional";
+import Habilidades from "./Habilidades";
+import Portafolio from "./Portafolio";
+
 export default function App() {
   const data = {
     nombres: "edson diego",
@@ -46,7 +52,7 @@ export default function App() {
       "Gnu/Linux (Debian, Ubuntu, Archlinux)",
     ],
     resumen:
-      "Estudiante de Ingeniería Informática del noveno ciclo, con conocimiento en desarrollo web (frontend y backend) y análisis de datos.",
+      "Estudiante de Ingeniería Informática del noveno ciclo, con conocimiento en análisis de datos y desarrollo web (frontend y backend).",
   };
 
   const style = {
@@ -101,7 +107,13 @@ export default function App() {
           <div className={styles.texto}>{data.resumen}</div>
         </div>
       </div>
-      <div className={styles.right}></div>
+      <div className={styles.right}>
+        <PerfilProfesional />
+        <Portafolio />
+        <FormacionAcademica />
+        <Aptitudes />
+        <Habilidades />
+      </div>
     </div>
   );
 }

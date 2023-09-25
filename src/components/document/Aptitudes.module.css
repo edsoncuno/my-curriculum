@@ -1,0 +1,41 @@
+.app {
+  width: 90%;
+  margin-top: 2rem;
+}
+
+.app .title {
+  background-color: grey;
+  font-size: 1.5rem;
+  font-weight: bold;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 2rem;
+}
+
+.app .title .icon {
+  height: 100%;
+  width: 10%;
+  background: url("../../../public/briefcase-svgrepo-com.svg");
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: 0.5rem;
+}
+
+.app .title .trash {
+  height: 100%;
+  width: 10%;
+}
+
+.app .body {
+  margin-top: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.app .body .card {
+  margin-top: 0.5rem;
+}
