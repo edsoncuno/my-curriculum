@@ -5,7 +5,7 @@ export default function App(props) {
     {
       nombre: "Ingeniería Informática",
       institucion: "Universidad Ricardo Palma",
-      fecha: "Agosto 2015 - En curso",
+      fecha: "Agosto 2015 - Agosto 2022",
       extra: "Estudiante de noveno ciclo",
     },
     {
