@@ -23,7 +23,7 @@
   height: 13rem;
   background: url("../../../public/perfil.png");
   background-position: center;
-  background-size: 130%;
+  background-size: 100% 100%;
   border-radius: 50%;
   border: 1px solid white;
   box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.1);
