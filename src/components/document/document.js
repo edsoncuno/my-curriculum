@@ -52,7 +52,7 @@ export default function App() {
       "Gnu/Linux (Debian, Ubuntu, Archlinux)",
     ],
     resumen:
-      "Egresado de Ingeniería Informática del noveno ciclo, con conocimiento en análisis de datos y desarrollo web (frontend y backend).",
+      "Estudiante de Ingeniería Informática del noveno ciclo, con conocimiento en análisis de datos y desarrollo web (frontend y backend).",
   };
 
   const style = {
